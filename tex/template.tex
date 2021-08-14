@@ -1,0 +1,45 @@
+\documentclass{jsreport}
+\usepackage{../sty/thesis}
+% \usepackage[usefigtable]{../sty/thesis}	% 図表をFig.とTableとする場合はこちらを使う
+% \usepackage[postshiki]{../sty/thesis} % \cref参照時に「式」を後ろに持ってくる場合はこちらを使う
+% \usepackage[usefigtable,postshiki]{../sty/thesis}	% 上記両方を指定する場合はこちらを使う
+
+
+\begin{document}
+
+\fyear{xx}   % 年度
+\papername{〇〇論文}	% 論文名（卒業論文・修士論文など）
+\title{タイトル}  % タイトル
+\id{xxxxxxx}    % 学籍番号
+\author{〇〇 〇〇}  % 著者
+\university{〇〇大学}	% 大学名
+\cource{〇〇研究科}	% 研究科名
+\major{〇〇専攻}	% 専攻名
+\supervisor{〇〇 〇〇}{教授}	% 指導教員を人数分設定（引数1に名前，引数2に職階を指定）
+\supervisor{〇〇 〇〇}{准教授}
+\supervisor{〇〇 〇〇}{准教授}
+\postdate{平成xx年xx月xx日}  % 提出年月日
+
+
+\maketitle
+
+\tableofcontents
+\clearpage
+
+
+\chapter{章タイトル}
+
+\section{節タイトル}
+
+\subsection{小節タイトル}
+
+
+\chapter*{謝辞}
+\addcontentsline{toc}{chapter}{謝辞}
+
+
+\begin{thebibliography}{99}
+
+\end{thebibliography}
+
+\end{document}
